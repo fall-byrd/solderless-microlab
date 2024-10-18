@@ -83,4 +83,5 @@ class WaitressAPIServer(APIServer):
         # logging.shutdown()
         sys.stdout.write('Last call before os._exit in flask\n')
         sys.stdout.flush()
-        os._exit(os.EX_OK)
+        # os._exit(os.EX_OK)
+        sys.exit(0)

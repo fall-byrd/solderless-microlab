@@ -87,7 +87,8 @@ class MicrolabHardwareManager(Process):
         # sys.stdout.write('Completed logging shutdown in MicrolabHardwareManager\n')
         # sys.stdout.flush()
 
-        os._exit(os.EX_OK)
+        sys.exit(0)
+        # os._exit(os.EX_OK)
         # import sys
         # sys.exit()
         # self._out_queue.close()

@@ -10,7 +10,7 @@ import time
 
 import requests
 
-from multiprocessing import Process, Queue, Value
+from multiprocessing import Process, Queue, Value, set_start_method
 from microlab.core import MicrolabHardwareManager
 from api.core import run_flask
 import config
@@ -210,5 +210,6 @@ def main():
 
 
 if __name__ == "__main__":
+    set_start_method('spawn')
     setupLogging()
     main()
